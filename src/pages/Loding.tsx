@@ -1,9 +1,10 @@
-import React from 'react'
 
 const Loding = () => {
   return (
-    <div>Loding</div>
-  )
+
+    <h3 className="p-28 m-auto">Loading For you . . .</h3>
+
+)
 }
 
 export default Loding

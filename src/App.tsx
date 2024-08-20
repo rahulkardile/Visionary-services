@@ -1,11 +1,12 @@
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import './App.css'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import Header from './components/Header';
 import Loding from './pages/Loding';
+import About from './pages/about';
 
-const About = lazy(() => import('./pages/about'));
+// const About = lazy(() => import('./pages/about'));
 
 function App() {
 
