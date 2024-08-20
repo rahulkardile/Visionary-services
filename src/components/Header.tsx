@@ -1,15 +1,23 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { IoSearch } from "react-icons/io5";
 import { IoNotificationsSharp } from "react-icons/io5";
 import logo from "../assets/chat.png"
 
 const Header = () => {
+  
+  const navigate = useNavigate();
+
+  const handleHome = ()=> {
+    navigate("/")
+  }
+
   return (
     <header className='flex w-screen items-center justify-between p-4 text-white '>
-        <h1 className="flex items-center gap-2 font-semibold">
+       
+       <h1 onClick={handleHome} className="flex cursor-pointer items-center gap-2 font-semibold">
           <img src={logo} alt="logo" className='w-10 h-auto' />
             <span>ChatBOT</span>    
-        </h1>
+       </h1>
         
         <nav className="uppercase flex gap-4 text-xs items-center font-semibold">
             <Link className='hover:text-orange-400 duration-300 ' to={"/"}>Home</Link>
