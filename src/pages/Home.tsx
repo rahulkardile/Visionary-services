@@ -1,4 +1,3 @@
-import React from 'react'
 import SearchBar from '../components/SearchBar'
 import { MdOutlineEmojiEmotions } from "react-icons/md";
 import { ImAttachment } from "react-icons/im";
@@ -56,7 +55,7 @@ const Home = () => {
             online: true
         },
     ]
-    
+
     return (
         <main className='flex justify-between gap-10 p-8'>
             <section className='w-[37%]'>
